@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*padding não vai desreiptar elementos q nos definirmos*/
+}
+body{
+    height: 100vh;/*100% verticalmente e horizontalmente*/
+    max-width: 100%;
+    margin: auto;
+}
+main{/*por que estamos usando o main para conter nosso flex box*/
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    background-color: aqua;
+    
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto;
+    align-content: center;/*alinhento vertical*/
+    justify-content: flex-start;/*alinhamento horizontal*/
+    /*flex end , flex start ,os elemetos ficam alinhados ao final*/
+}
+
+.quadrado{
+    display: inline-block;
+    background-color: blueviolet;
+    --tamanho : 150px;
+    padding: var(--tamanho);
+  /*.quadrado : nth-chil(2)*/  
+}
+.quadrado:nth-child(3){
+    background-color: red;
+}
