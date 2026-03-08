@@ -549,10 +549,42 @@ footer h2{
      .chamada-vendedor{
         width: 100%;
         height: 80px;
-        
+        background-color: red;
         margin-top: 2px;
         
      }
+    .chamada-vendedor{
+        width: 100%;
+      
+    
+    
+}
+   .chamada-vendedor h2{
+        margin-left: 17px;
+}
+   .verified-icon{
+        margin-right: 140px;
+        float: right;
+ 
+
+
+
+}
+    .chamada-vendedor p{
+        margin-left: 15px;
+        padding: 2px;
+    
+}
+/* chamada-icons */
+
+.chamada-icons{
+    width: 50%;
+    margin-top: 60px;
+    height: 50px;
+    display: flex;
+    
+    
+}
     .chamada-icons{
         margin-top: 40px;
         margin-left: 20px;
