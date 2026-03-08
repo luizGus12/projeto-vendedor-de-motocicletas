@@ -61,8 +61,9 @@ body{
 
 
 section.top-show{
-    height: 400px;
+    min-height: 400px;
     border-bottom: 1px solid #ddd;
+    
 }
 
 
@@ -168,6 +169,7 @@ section.top-show{
     height: 50px;
     display: flex;
     
+    
 }
 .chamada-icons > .contain-icons{
     width: 400px;
@@ -193,7 +195,7 @@ section.top-show{
     color: white;
     font-size: 21px;
     padding-left: 17px;
-    margin-top: 3px;
+    margin-top: 11px;
 }
 .icon1{
     color: white;
@@ -301,12 +303,12 @@ section.container {
 
 div.flex {
     display: flex;
-    max-width: 80%;
+    max-width: 95%;
     margin: 40px auto;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px 0; /* Adicionado padding para melhor visualização */
-    justify-content: flex-start; /* Centraliza os itens horizontalmente */
+     
     
 
 }
@@ -317,8 +319,9 @@ div.flex {
 div.w25{
     width: 100%;
     border: 3px solid #ddd;
-    height: 32rem;
+    height: auto;
     border-radius: 11px;
+    
     
 
 }
@@ -339,8 +342,10 @@ div.w25 img{
 }
 .image-moto{
     width: 90%;
+    max-width: 350px; /* Evita que a imagem cresça demais em telas grandes */
     height: 42%;
-    margin-top: 2%;
+    margin: 2% auto;
+
     
     
 }
@@ -485,169 +490,137 @@ footer h2{
   MEDIA QUERIES PARA RESPONSIVIDADE
   ==========================================
 */
-/*para celulares*/
 
-@media screen and (min-width: 300px) and (max-width: 768px){
-    /* itens do chamada vendedor */
+@media screen and (min-width: 300px) and (max-width:700px){
 
-    .janela-modal{
-        width: 70%;
-        margin-top: 20%;
-
-}
-    section.top-show{
-       height: 480px;
-       
-}
-    .chamada-header{
-        flex-direction: column;
+    div.flex {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 90%;
     }
-    .chamada-vendedor{
-        width: 100%;
-        
-
-  
-    }
-    .chamada-vendedor p{
-        margin-bottom: 10px;
-    }
-    .chamada-icons{
-        width: 100%;
-        margin-top: 0;
-        
- 
-    } 
-    .chamada-icons >.contain-icons{
-        margin: 0 auto;
-        
-       
-    }
-    .icon-whatsapp p{
     
-       margin-top: 13px;
-}
 
-    
-    
-    .header{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
     .top-motos-box{
-        display: none;
+        margin-right: 20px;
     }
-    .separator-bar{
-        display: none;
+    /* .chamada-icons{
+        margin-top: 120px;
+    } */
+    .chamada-header{
+        display: block;
+        height: 200px;
+     }
+     .chamada-vendedor{
+        width: 100%;
+        height: 110px;
+        
+     }
+    .chamada-icons{
+        margin-top: 6px;
+        margin-left: 20px;
+        width: 70%;
+            
+}
+    .chamada-icons > .contain-icons{
+       margin-left: 10%;
+       display: flex;
+
+}
+    
+}
+@media screen and (min-width: 701px) and (max-width: 860px){
+    
+    div.flex {
+        justify-content: flex-start;
+        max-width: 90%;
+       
     }
-
-
-    div.flex{
-        max-width: 70%;
+    div.w25 {
+        width: calc(50% - 10px); 
         justify-content: center;
     }
 
-    /* estilização do flex-box */
-
-    div.w25 {
-        width: calc(100% - 20px); /* 2 itens por linha, com espaço */
-		height: 28rem;
-        
+    .top-motos-box{
+        margin-right: 20px;
     }
+    /* .chamada-icons{
+        margin-top: 120px;
+    } */
+    .chamada-header{
+        display: block;
+        height: 200px;
+     }
+     .chamada-vendedor{
+        width: 100%;
+        height: 110px;
+        
+     }
+    .chamada-icons{
+        margin-top: 6px;
+        margin-left: 20px;
+        width: 70%;
+            
+}
+    .chamada-icons > .contain-icons{
+       margin-left: 10%;
+       display: flex;
 
-
+}
     
 }
-/* Para telas de tablet (max-width: 900px) */
-@media screen and (min-width: 769px) and (max-width: 830px) {
-    div.flex{
-        justify-content: flex-start;
-        
-    }
 
+
+@media screen and (min-width: 861px) and (max-width: 1100px){
+ 
+    div.flex {
+        justify-content: flex-start;
+        max-width: 95%;
+       
+    }
     div.w25 {
-        width: calc(50% - 20px); /* 2 itens por linha, com espaço */
-		gap: 12px;
-        
-        
+        width: calc(33.33% - 15px); 
+        justify-content: center;
+        height: 27rem;
     }
-    div.w50 {
-        width: 100%; /* Ajuste para que o w50 continue ocupando a largura total */
-    }
-    .chamada-icons{
-        margin-left: 6%;
-        width: 300px;
-    }
-    .icon-whatsapp p{
-        padding-top: 16px;
-        font-size: 15px;
-    }
+ 
 
     .chamada-icons > .contain-icons{
-        margin-left: 10%;
-
-}
-}
-
-/* Para telas de desktop (min-width: 901px) */
-@media screen and (min-width: 830px) and (max-width: 1200px){
-    div.w25 {
-        width: calc( 50% - 15px); /* 4 itens por linha, com espaço */
-        
-        
-    }
-    .chamada-icons{
-        margin-left: -40px;
-        
-    }
-
-    
-
-}
-@media screen and (min-width: 1024px )  {
-    .icon-whatsapp p{
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .chamada-icons{
-        margin-left: 0;
-        margin-right: 10px;
-        
-    }
-
-    .chamada-icons > .icons-igual{
-        margin: 0 auto;
-
-
-    } 
-
-    div.flex{
-        justify-content: flex-start;
-    }
-
+       margin-left: 25%;
        
 
-    div.w50 {
-        width: calc(50% - 10px);
-    }
+}
     
-    div.w25 {
-        width: calc(33.3% - 15px); /* 3 itens por linha, com espaço */
-        
-        
-    }
-
-
 }
-@media screen and (min-width: 1100px ){
+@media screen and (min-width: 1101px){
 
     div.w25 {
-        width: calc(25% - 15px); /* 4 itens por linha, com espaço */
-        
-        
+        width: calc(25% - 20px); 
+        justify-content: center;
+        height: 27rem;
     }
 
+    .top-motos-box{
+        margin-right: 20px;
+    }
+
+     .chamada-vendedor{
+        
+        height: 125px;
+        
+        
+     }
+
+    .chamada-icons > .contain-icons{
+       margin-left: 40%;
+       
+
 }
+    
+}
+
+
+
+
 
 
 
