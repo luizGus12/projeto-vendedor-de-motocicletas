@@ -28,24 +28,25 @@ body{
 
 
 
-/* contedudo do header */
+/* contedudo do header priorizando o mobile first */
 
 
 section.top-show{
     
     border-bottom: 1px solid #ddd;
+    min-height: 300px;
     
 }
 
 
  header{
-    height: 200px;
-    width: 90%;
+    height: 100px;
+    width: 100%;
     background-image: url('../img/header-img.png');
     background-repeat: no-repeat;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin: 0 auto;
+    
     
 }
 
@@ -54,8 +55,8 @@ section.top-show{
     margin-left: 6%;
 	float: left;
     background: white;
-    width: 165px;
-    height: 165px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     box-shadow: 3px 28px 24px -22px rgba(0,0,0,0.66);
     -webkit-box-shadow: 3px 28px 24px -22px rgba(0,0,0,0.66);
@@ -63,13 +64,14 @@ section.top-show{
 
 }
 .logo-vendedor{
-    width: 155px;
-    height: 155px;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     background-image: url('../img/dev2.jpeg');
     background-size: cover;
     margin-top: 5px;
     margin-left: 5px;
+    margin: 6px auto;
 
 
 }
@@ -77,8 +79,8 @@ section.top-show{
 .top-motos-box{
     width: 100px;
     height: 100px;
-    margin-top: 26px;
-    margin-right: 120px;
+    margin-top: 36px;
+    margin-right: 30px;
     float: right;
     background-color: white;
     border-radius: 8px;
@@ -95,7 +97,7 @@ section.top-show{
     background-repeat: no-repeat;
     background-size: contain; */
     color: rgb(204, 0, 0);
-    margin-top: 39px;
+    margin-top: 33px;
     margin-left: 3px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -106,51 +108,68 @@ section.top-show{
     width: 2px;
     margin-right: 30px;
     margin-top: 20px;
+    display: none;
 }
 
 
 .chamada-header{
     width: 100%;
-    height: 200px;
-    display: flex;
+    display: block;
+    margin-top: 120px;
+    
 }
 .chamada-vendedor{
-    width: 50%;
-    height: 160px;
+    width: 100%;
+    min-height: 100px;
     
+    
+    
+}
+.contain-vendedor-title{
+    
+    width: 260px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
     
 }
 .chamada-vendedor h2{
-    margin-top: 50px;
-    margin-left: 80px;
+    padding-top: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    
 }
 .verified-icon{
     background-image: url('../img/verified-icon.jpeg');
     width: 25px;
     height: 25px;
     background-size: contain;
-    margin-left: 400px;
-    margin-top: -26px;
+    margin-top: 5px;
+    
+
 }
 .chamada-vendedor p{
     color: rgb(63, 63, 70);
-    margin-top: 13px;
-    margin-left: 87px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px;
 }
 /* chamada-icons */
 
 .chamada-icons{
-    width: 50%;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 10px;
     height: 50px;
     display: flex;
+    margin-bottom: 20px;
     
     
 }
 .chamada-icons > .contain-icons{
     width: 400px;
-    margin-left: 40%;
+    margin-left: 0;
     display: flex;
+    
 
 }
 .icon-whatsapp{
@@ -467,124 +486,10 @@ footer h2{
   ==========================================
 */
 
-@media screen and (min-width: 200px) and (max-width:700px){
-    .top-show{
-        padding: 0 10px 20px 10px;
-    }
-    div.flex {
-        flex-direction: row; 
-        flex-wrap: wrap;
-        width: 90%;
-    }
-    
-     header{
-       height: 100px;
-       min-width: 100%;
-       margin: 0;
-
-    
-}
-    .top-motos-box{
-        width: 90px;
-        height: 90px;
-        margin-top: 36px;
-    }
-    .top-motos-logo{
-        width: 80px;
-        margin-top: 33px;
-        margin-left: 4px;
-    }
-    .separator-bar{
-        display: none;
-    }
-
-
- 
-
-    .top-motos-box{
-        margin-right: 20px;
-        
-        
-    }
-    
-
-     .logo-vendedor-box{
-        display: block;
-        width: 130px ;
-        height: 130px;
-        
-     }
-     .logo-vendedor{
-        width: 90%;
-        height: 90%;
-        margin: 6px auto;
-     }
-     
 
     
 
-     .chamada-vendedor{
-        width: 100%;
-        height: 100px;
-        margin-top: 130px;
-        margin-left: 0;
-        
-     }
-  
-      
-    
-    
-}
-   .chamada-vendedor h2{
-        margin-left: 1px;
-        font-size: 18px;
-}
-   .verified-icon{
-        margin-right: 190px;
-        float: right;
- 
-
-
-
-}
-    .chamada-vendedor p{
-        margin-left: 3px;
-        padding: 2px;
-        font-size: 15px;
-    
-}
-/* chamada-icons */
-
-    .chamada-header{
-        display: block;
-        height: 150px;
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5px;
-        
-        
-     }
-    .chamada-icons{
-        margin-top: 10px;
-        margin-left: 1px;
-        width: 100%;
-        
-        
-        
-            
-}
-    .chamada-icons > .contain-icons{
-       margin-left: 0;
-       display: flex;
-
-}
-    .criar-site-btn{
-        max-width: 70%;
-
-    }
-    
-
-@media screen and (min-width: 701px) and (max-width: 860px){
+@media screen and (min-width: 701px) {
     
     div.flex {
         justify-content: flex-start;
@@ -595,7 +500,18 @@ footer h2{
         width: calc(50% - 10px); 
         justify-content: center;
     }
-
+    header{
+        width: 95%;
+        margin: 0 auto;
+        height: 220px;
+    }
+    .logo-vendedor-box{
+        width: 170px;
+        height: 170px;
+    }
+    .logo-vendedor{
+        margin-top: 8px;
+    }
     .top-motos-box{
         margin-right: 20px;
     }
@@ -605,16 +521,26 @@ footer h2{
     .chamada-header{
         display: block;
         height: 200px;
+        margin-top: 50px;
+     }
+     .separator-bar{
+        display: block;
+        height: 90px;
+        margin-top: 39px;
      }
      .chamada-vendedor{
-        width: 100%;
+        width: 80%;
         height: 110px;
+        margin: auto;
         
      }
+
+
     .chamada-icons{
         margin-top: 6px;
         margin-left: 20px;
         width: 70%;
+        margin: auto;
             
 }
     .chamada-icons > .contain-icons{
@@ -626,7 +552,7 @@ footer h2{
 }
 
 
-@media screen and (min-width: 861px) and (max-width: 1100px){
+@media screen and (min-width: 861px){
  
     div.flex {
         justify-content: flex-start;
@@ -638,13 +564,26 @@ footer h2{
         justify-content: center;
         height: 27rem;
     }
+
+    .chamada-header{
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+    }
+    .chamada-vendedor{
+        width: 50%;
+    }
+    .chamada-icons{
+        width: 50%;
+        padding-left: 80px;
+    }
  
 
-    .chamada-icons > .contain-icons{
-       margin-left: 25%;
+
+    
        
 
-}
+
     
 }
 @media screen and (min-width: 1101px){
@@ -656,18 +595,19 @@ footer h2{
     }
 
     .top-motos-box{
-        margin-right: 20px;
+        margin-right: 80px;
     }
 
      .chamada-vendedor{
         
-        height: 125px;
+        padding-left: 50px;
         
         
      }
+     
 
     .chamada-icons > .contain-icons{
-       margin-left: 40%;
+       margin-left: 10%;
        
 
 }
